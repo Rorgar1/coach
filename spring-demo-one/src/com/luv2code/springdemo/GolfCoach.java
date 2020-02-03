@@ -29,5 +29,15 @@ public class GolfCoach implements Coach {
 	public String getDailyFortune() {
 		return fortuneService.getFortune();
 	}
+	
+	// add an init method
+	public void startUpStuff() {
+		System.out.println("GolfCoach: inside method startUpStuff");
+	}
+	
+	// add a destroy method
+	public void cleanUpStuff() {
+		System.out.println("GolfCoach: inside method cleanUpStuff");
+	}
 
 }
